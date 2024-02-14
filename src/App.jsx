@@ -1,13 +1,26 @@
 import "./App.css";
+import { MdOutlineTranslate } from "react-icons/md";
 
 function App() {
   return (
     <main>
       <section className="hero">
-        <nav>
-          <img src="/netflixlogo.png" alt="logo" className="logo" />
-          <select name="" id=""></select>
-          <button>sign in</button>
+        <nav className="navbar">
+          <div className="logo-container">
+            <img src="/netflix_logo.svg" alt="logo" className="logo" />
+          </div>
+          {/* sign in and language container */}
+          <div className="sign-in-container">
+            <select name="languages" id="languages">
+              <option value="">
+                <MdOutlineTranslate />
+              </option>
+              <option value="العربية">العربية</option>
+              <option value="Français">Français</option>
+              <option value="English">English</option>
+            </select>
+            <button className="sign-in-btn">sign in</button>
+          </div>
         </nav>
         <article>
           <h1>unlimited movies, TV shows and more</h1>

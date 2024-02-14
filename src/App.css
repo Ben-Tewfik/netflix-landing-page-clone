@@ -5,15 +5,38 @@
 }
 :root {
   --mainRed: #e50914;
+  --mainHoverRed: rgb(54, 0, 3);
   --mainWhite: #fff;
   --mainBlack: #000;
   --mainGrey: #232323;
   --lighterGrey: #2d2d2d;
 }
+
+.navbar {
+  padding: 1.5rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-  height: 10rem;
+  height: 2rem;
 }
 .hero {
   background: url(../public/hero.jpg) center/cover no-repeat;
-  height: 100vh;
+  height: 70vh;
+}
+.sign-in-btn {
+  background-color: var(--mainRed);
+  border: none;
+  color: var(--mainWhite);
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+/* make a hover color later */
+.sign-in-btn:hover {
+  background-color: var(--mainHoverRed);
 }
