@@ -12,12 +12,12 @@ function App() {
           {/* sign in and language container */}
           <div className="sign-in-container">
             <select name="languages" id="languages">
-              <option value="">
+              <option value="English">
                 <MdOutlineTranslate />
+                English
               </option>
               <option value="العربية">العربية</option>
               <option value="Français">Français</option>
-              <option value="English">English</option>
             </select>
             <button className="sign-in-btn">sign in</button>
           </div>
@@ -35,6 +35,8 @@ function App() {
           </form>
         </article>
       </section>
+      {/* divider */}
+      <div className="divider"></div>
     </main>
   );
 }
