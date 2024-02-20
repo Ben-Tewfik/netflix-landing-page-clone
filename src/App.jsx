@@ -1,5 +1,5 @@
 import "./App.css";
-import { MdOutlineTranslate } from "react-icons/md";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 function App() {
   return (
@@ -11,27 +11,31 @@ function App() {
           </div>
           {/* sign in and language container */}
           <div className="sign-in-container">
-            <select name="languages" id="languages">
-              <option value="English">
-                <MdOutlineTranslate />
-                English
-              </option>
+            <select name="languages" id="languages" foc>
+              <option value="english">english</option>
               <option value="العربية">العربية</option>
               <option value="Français">Français</option>
             </select>
             <button className="sign-in-btn">sign in</button>
           </div>
         </nav>
-        <article>
-          <h1>unlimited movies, TV shows and more</h1>
-          <p>whatch anywhere. cancel anytime</p>
-          <h3>
-            reday to watch? enter your email to create or restart your
+        <article className="hero-text">
+          <h1>unlimited movies, TV shows, and more</h1>
+          <p>Watch anywhere. Cancel anytime</p>
+          <p>
+            Ready to watch? Enter your email to create or restart your
             membership
-          </h3>
+          </p>
           <form>
-            <input type="email" />
-            <button type="submit">get started</button>
+            <input
+              type="email"
+              className="email-input"
+              placeholder="Email address"
+            />
+            <button type="submit" className="get-started-btn">
+              <span>get started</span>
+              <RiArrowRightSLine className="arrow-icon" />
+            </button>
           </form>
         </article>
       </section>
