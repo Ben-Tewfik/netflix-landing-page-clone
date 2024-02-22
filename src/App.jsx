@@ -27,11 +27,12 @@ function App() {
             membership
           </p>
           <form>
-            <input
-              type="email"
-              className="email-input"
-              placeholder="Email address"
-            />
+            <div className="input-wrapper">
+              <input type="email" className="email-input" id="email" required />
+              <label htmlFor="email" className="email-label">
+                Email address
+              </label>
+            </div>
             <button type="submit" className="get-started-btn">
               <span>get started</span>
               <RiArrowRightSLine className="arrow-icon" />
