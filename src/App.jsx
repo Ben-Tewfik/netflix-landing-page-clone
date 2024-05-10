@@ -1,5 +1,6 @@
 import "./App.css";
 import { RiArrowRightSLine } from "react-icons/ri";
+import Faq from "./components/Faq/Faq";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
       </section>
       {/* divider */}
       <div className="divider"></div>
+      {/* faq component */}
+      <Faq />
+      {/* end of faq component */}
     </main>
   );
 }
