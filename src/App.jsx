@@ -1,23 +1,25 @@
 import "./App.css";
 import { RiArrowRightSLine } from "react-icons/ri";
 import Faq from "./components/Faq/Faq";
+import logo from "./assets/netflix_logo.svg";
 
 function App() {
   return (
     <main>
       <section className="hero">
         <nav className="navbar">
-          <div className="logo-container">
-            <img src="/netflix_logo.svg" alt="logo" className="logo" />
-          </div>
-          {/* sign in and language container */}
-          <div className="sign-in-container">
-            <select name="languages" id="languages" foc>
-              <option value="english">english</option>
-              <option value="العربية">العربية</option>
-              <option value="Français">Français</option>
-            </select>
-            <button className="sign-in-btn">sign in</button>
+          <div className="nav-center">
+            {/* logo */}
+            <img src={logo} alt="logo" className="logo" />
+            {/* sign in and language container */}
+            <div className="nav-buttons-container">
+              <select name="languages" id="languages" foc>
+                <option value="english">english</option>
+                <option value="العربية">العربية</option>
+                <option value="Français">Français</option>
+              </select>
+              <button className="sign-in-btn">sign in</button>
+            </div>
           </div>
         </nav>
         <article className="hero-text">
