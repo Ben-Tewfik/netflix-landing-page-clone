@@ -1,8 +1,8 @@
 import "./App.css";
-import { RiArrowRightSLine, RiTranslate, RiTranslate2 } from "react-icons/ri";
+import { RiArrowRightSLine } from "react-icons/ri";
 import Faq from "./components/Faq/Faq";
 import logo from "./assets/netflix_logo.svg";
-import { AiOutlineTranslation } from "react-icons/ai";
+import LanguageDropDown from "./components/LanguageDropDown/LanguageDropDown";
 
 function App() {
   return (
@@ -14,16 +14,7 @@ function App() {
             <img src={logo} alt="logo" className="logo" />
             {/* sign in and language container */}
             <div className="nav-buttons-container">
-              <div className="languages-container">
-                <div className="translation-icon-container">
-                  <RiTranslate2 className="translation-icon" />
-                </div>
-                <select name="languages" id="languages" foc>
-                  <option value="english">english</option>
-                  <option value="العربية">العربية</option>
-                  <option value="Français">Français</option>
-                </select>
-              </div>
+              <LanguageDropDown />
               <button className="sign-in-btn">sign in</button>
             </div>
           </div>
